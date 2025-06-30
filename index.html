@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="icon/todo-icon.png" type="image/png" />
+  <title>Advanced To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+  <img src="icon/todo-icon.png" alt="To-Do App Icon" class="logo" />
+  <h1>📋 To-Do App</h1>
+  <button id="toggleTheme">🌙</button>
+</header>
+
+    <div class="task-input">
+      <input type="text" id="taskText" placeholder="Add a task..." />
+      <input type="datetime-local" id="taskDate" />
+      <select id="taskCategory">
+        <option value="Personal">Personal</option>
+        <option value="Study">Study</option>
+        <option value="Work">Work</option>
+      </select>
+      <button id="addTask">Add</button>
+    </div>
+
+    <div class="filters">
+      <input type="text" id="searchTask" placeholder="Search tasks..." />
+      <select id="filterCategory">
+        <option value="All">All Categories</option>
+        <option value="Personal">Personal</option>
+        <option value="Study">Study</option>
+        <option value="Work">Work</option>
+      </select>
+      <select id="filterStatus">
+        <option value="All">All</option>
+        <option value="Pending">Pending</option>
+        <option value="Completed">Completed</option>
+        <option value="Pinned">Pinned</option>
+      </select>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
